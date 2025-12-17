@@ -17,7 +17,7 @@ public class UserResourceController {
     @GetMapping("/secret-resource")
     @PreAuthorize("hasRole('USER')")
     public ResponseEntity<String> first(Authentication authentication, HttpServletRequest request) {
-        return new ResponseEntity<>("SECRET USER RESOURCE", HttpStatus.OK);
+        return new ResponseEntity<>("{\"resource\": \"SECRET USER RESOURCE\"}", HttpStatus.OK);
     }
 
 }

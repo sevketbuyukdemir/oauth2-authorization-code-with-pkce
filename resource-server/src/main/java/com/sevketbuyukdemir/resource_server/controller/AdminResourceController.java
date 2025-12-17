@@ -19,6 +19,6 @@ public class AdminResourceController {
     @GetMapping("/secret-resource")
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<String> first(Authentication authentication, HttpServletRequest request) {
-        return new ResponseEntity<>("SECRET ADMIN RESOURCE", HttpStatus.OK);
+        return new ResponseEntity<>("{\"resource\": \"SECRET ADMIN RESOURCE\"}", HttpStatus.OK);
     }
 }
