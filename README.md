@@ -34,22 +34,15 @@ docker-compose stop
 ```
 docker-compose down -v
 ```
-3. Run Spring Boot resource server application (You can open it in IntellijIdea)
+3. Run Spring Boot resource-server application (You can open it in IntellijIdea)
 4. Run Next.js Client Application and go to the [browser](http://localhost:3000) to test.
-> [!NOTE]
-> Open folder in VSCode and run below commands.
-> ```
-> cd client-application
-> ```
-> ```
-> npm install
-> ```
-> ```
-> npm run dev
-> ```
-
-> [!TIP]
-> Use this grant type flow if you have frontend applications that need end-user authentication.
+- Open client-application folder in VS Code, then run the commands below.
+```
+npm install
+```
+```
+npm run dev
+```
 
 ## Authorization Code with PKCE grant type flow:
 
@@ -68,6 +61,10 @@ sequenceDiagram
     PublicClient->>ResourceServer: 7. Hey Resource Server, i want to access the user resources. Here is the access token from Auth Server.
     ResourceServer->>PublicClient: 8. Hey Client, your token validated successfully. Here are the resources you requested.
 ```
+> [!TIP]
+> Use this grant type flow if you have frontend applications that need end-user authentication.
+
+
 > [!IMPORTANT]
 > In the steps 2 & 3, where client is making a request to Auth Server endpoint have to send the below important details.
 >
