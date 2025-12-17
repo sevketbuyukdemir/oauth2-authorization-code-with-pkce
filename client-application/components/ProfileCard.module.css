@@ -1,0 +1,155 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.75rem;
+  border: 1px solid #dedbe6;
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.dark .card {
+  border-color: #2d2a3b;
+  background-color: #1e1a2e;
+}
+
+.header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #f1f0f4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark .header {
+  border-bottom-color: #2d2a3b;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  background-color: rgba(45, 9, 129, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2d0981;
+}
+
+.dark .icon {
+  background-color: rgba(45, 9, 129, 0.2);
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #131118;
+}
+
+.dark .title {
+  color: white;
+}
+
+.moreIcon {
+  color: #6d6189;
+}
+
+.dark .moreIcon {
+  color: #a09bb0;
+}
+
+.content {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem 3rem;
+}
+
+@media (min-width: 640px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6d6189;
+}
+
+.dark .label {
+  color: #a09bb0;
+}
+
+.value {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #131118;
+}
+
+.dark .value {
+  color: white;
+}
+
+.valueRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.verifiedIcon {
+  color: #10b981;
+  font-size: 1.125rem;
+}
+
+.roleTag {
+  padding: 0.25rem;
+  border-radius: 0.75rem;
+  background-color: rgba(45, 9, 129, 0.1);
+  color: #2d0981;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.dark .roleTag {
+  background-color: rgba(45, 9, 129, 0.2);
+}
+
+.footer {
+  margin-top: auto;
+  padding: 1rem;
+  background-color: #fbfbfe;
+  border-top: 1px solid #f1f0f4;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.dark .footer {
+  background-color: #151022;
+  border-top-color: #2d2a3b;
+}
+
+.footerText {
+  font-size: 0.75rem;
+  color: #6d6189;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dark .footerText {
+  color: #a09bb0;
+}

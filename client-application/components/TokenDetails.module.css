@@ -1,0 +1,86 @@
+.details {
+  margin-top: 0;
+}
+
+.summary {
+  border-radius: 0.75rem;
+  background-color: rgba(45, 9, 129, 0.05);
+  border: 1px solid rgba(45, 9, 129, 0.1);
+  transition: all 0.2s ease;
+}
+
+.dark .summary {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.summary[open] {
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.dark .summary[open] {
+  background-color: #1e1a2e;
+}
+
+.summaryContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  cursor: pointer;
+  list-style: none;
+  color: #2d0981;
+  font-weight: 500;
+  user-select: none;
+}
+
+.dark .summaryContent {
+  color: white;
+}
+
+.summaryLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.expandIcon {
+  transition: transform 0.2s ease;
+}
+
+.summary[open] .expandIcon {
+  transform: rotate(180deg);
+}
+
+.content {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.tokenBox {
+  background-color: #151022;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  overflow-x: auto;
+  border: 1px solid #2d2a3b;
+  margin-top: 0.75rem;
+}
+
+.token {
+  font-size: 0.75rem;
+  color: rgba(16, 185, 129, 0.9);
+  font-family: "SF Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  margin: 0;
+  white-space: pre;
+}
+
+.warning {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #6d6189;
+}
+
+.dark .warning {
+  color: #a09bb0;
+}

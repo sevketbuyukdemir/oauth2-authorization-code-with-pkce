@@ -1,0 +1,23 @@
+{
+  "name": "client-application",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@react-keycloak/ssr": "^3.3.0",
+    "@react-keycloak/web": "^3.4.0",
+    "keycloak-js": "^26.2.2",
+    "next": "16.0.10",
+    "react": "19.2.1",
+    "react-dom": "19.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^9",
+    "eslint-config-next": "16.0.10"
+  }
+}
