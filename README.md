@@ -34,7 +34,19 @@ docker-compose stop
 ```
 docker-compose down -v
 ```
-3. Run Spring Boot applications
+3. Run Spring Boot resource server application (You can open it in IntellijIdea)
+4. Run Next.js Client Application and go to the [browser](http://localhost:3000) to test.
+> [!NOTE]
+> Open folder in VSCode and run below commands.
+> ```
+> cd client-application
+> ```
+> ```
+> npm install
+> ```
+> ```
+> npm run dev
+> ```
 
 > [!TIP]
 > Use this grant type flow if you have frontend applications that need end-user authentication.
