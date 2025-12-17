@@ -12,7 +12,7 @@ export default function DashboardHero({ user }) {
         </div>
         <div className={styles.textSection}>
           <h1 className={styles.title}>
-            Welcome back, {user?.preferred_username || "User"}!
+            Welcome back, {user?.given_name || "User"}!
           </h1>
           <p className={styles.subtitle}>
             You have successfully authenticated via Keycloak using the PKCE

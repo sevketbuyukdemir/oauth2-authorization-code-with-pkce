@@ -36,6 +36,14 @@ export default function Header({ authenticated, onLogoutClick, userInfo }) {
               >
                 Dashboard
               </Link>
+              <Link
+                href="/resources"
+                className={`${styles.navLink} ${
+                  pathname === "/resources" ? styles.active : ""
+                }`}
+              >
+                Resources
+              </Link>
             </nav>
           )}
           <div className={styles.userSection}>

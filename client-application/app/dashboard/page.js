@@ -23,7 +23,7 @@ export default function DashboardPage() {
   }, [keycloak?.token, router]);
 
   if (!keycloak?.token) {
-    return null; // Don't render anything while redirecting
+    return null;
   }
 
   const isAuthenticated = !!keycloak?.token;

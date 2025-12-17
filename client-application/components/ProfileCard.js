@@ -3,7 +3,6 @@
 import styles from "./ProfileCard.module.css";
 
 export default function ProfileCard({ user }) {
-  console.log(user);
   return (
     <div className={styles.card}>
       <div className={styles.header}>
